@@ -1,0 +1,29 @@
+GET http://localhost:5062/games
+
+###
+GET http://localhost:5062/games/1
+
+###
+POST  http://localhost:5062/games
+Content-Type: application/json
+
+{
+    "name": "GTA",
+    "GenreId": 3,
+    "price": 26.3,
+    "releaseDate": "1998-07-15"
+}
+
+###
+PUT  http://localhost:5062/games/5
+Content-Type: application/json
+
+{
+    "name": "GTA 5",
+    "GenreId": 3,
+    "price": 26.3,
+    "releaseDate": "1998-07-15"
+}
+
+###
+DELETE http://localhost:5062/games/1
